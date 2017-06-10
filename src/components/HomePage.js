@@ -1,4 +1,5 @@
 import React from 'react';
+import Game from '../game/Game';
 
 class HomePage extends React.Component {
     constructor() {
@@ -7,6 +8,8 @@ class HomePage extends React.Component {
 
 
     componentDidMount() {
+        let game = new Game();
+        game.init();
     }
 
     render() {
@@ -36,6 +39,16 @@ class HomePage extends React.Component {
                                 </p>
 
                             </div>
+                        </div>
+                        <div className="row">
+                            bla
+                            <div id="world" style={{
+                                position: 'absolute',
+                                width: '100%',
+                                height: '100%',
+                                overflow: 'hidden',
+                                background: '-webkit-linear-gradient(#e4e0ba, #f7d9aa)'
+                            }}></div>
                         </div>
                     </div>
                 </div>
