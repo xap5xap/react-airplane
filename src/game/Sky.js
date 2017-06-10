@@ -9,14 +9,14 @@ class Sky {
         this.mesh = new THREE.Object3D();
 
         // choose a number of clouds to be scattered in the sky
-        this.nClouds = 20;
+        let nClouds = 20;
 
         // To distribute the clouds consistently,
         // we need to place them according to a uniform angle
-        var stepAngle = Math.PI * 2 / this.nClouds;
+        var stepAngle = Math.PI * 2 / nClouds;
 
         // create the clouds
-        for (var i = 0; i < this.nClouds; i++) {
+        for (var i = 0; i < nClouds; i++) {
             var c = new Cloud();
 
             // set the rotation and the position of each cloud;

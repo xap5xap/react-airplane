@@ -4,6 +4,8 @@ import Pilot from './Pilot';
 
 class Airplane {
     mesh;
+    propeller;
+    pilot;
 
     constructor() {
         this.mesh = new THREE.Object3D();

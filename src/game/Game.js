@@ -22,6 +22,7 @@ class Game {
     //LIGHTS
     hemisphereLight;
     shadowLight;
+    ambientLight;
 
     airplane;
     sea;
